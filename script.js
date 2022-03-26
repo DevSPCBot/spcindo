@@ -47,12 +47,6 @@ function experiment() {
         });
       });
 
-// document.getElementById("downloadbutton").addEventListener("click", 
-//     html2canvas(document.body), {
-//         onrendered: function(canvas) {
-//             document.body.append(canvas)
-//         }
-//     })
 
 
     
