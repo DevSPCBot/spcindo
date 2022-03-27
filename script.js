@@ -3,7 +3,7 @@ function p() {
     document.getElementById("periode").innerHTML = `<h1 class="periodep">${new Intl.DateTimeFormat("id-ID", {month: "long", year: "numeric"}).format(new Date(new Date().getFullYear(), new Date().getMonth() -1)).toUpperCase()}</h1>`
 }
 function showTopvoter() {
-    fetch(`${secrets.API}`)
+    fetch(`${process.env.API}`)
     .then((res) => res.json())
     .then(data => {
         var date = new Date();
